@@ -1,4 +1,5 @@
 #include <iostream>
+
 int calendar() {
     std::cout << "\n\n\t\t\t\t#####################\n\t\t\t\t#     April 2023    #\n";
     std::cout << "\t\t\t\t# 1 2 3 4 5 6 7 8 9 #\n\t\t\t\t# 10 11 12 13 14 15 #\n";
@@ -21,7 +22,12 @@ int house() {
     return 0;
 }
 int name(){
-    std::cout << "\nSERGEY\n";
+    std::cout << "\n\n\t\t\t\t\t\t\t     ****";
+    std::cout << "\n\n\t\t\t ****\t****   ***   *****  ****   *     *";
+    std::cout << "\n\t\t\t*    *  *      *  *  *      *      *    **";
+    std::cout << "\n\t\t\t*\t***    ***   *      ***    *  *  *";
+    std::cout << "\n\t\t\t*    *  *      *     *      *      **    *";
+    std::cout << "\n\t\t\t ****\t****   *     *      ****   *     *\n\n";
     return 0;
 }
 int Big_Dipper() {
@@ -31,10 +37,10 @@ int Big_Dipper() {
 int resume(){
     std::cout << "\n\n\t\t\t\t#####################\n\t\t\t\tHi, I am Sergey!\n";
     std::cout << "\t\t\t\t#####################\n\t\t\t\tC++ developer\n";
-    std::cout << "\t\t\t\t#####################\n\t\t\t\tI like programming since childhood\n";
-    std::cout << "\t\t\t\tI'm based in Ukraine Odessa\n";
-    std::cout << "\t\t\t\tYou can contact me at lageroped7@gmail.com\n\t\t\t\tI'm learning Django and Data bases\n";
-    std::cout << "\t\t\t\tI'm love listening to music 🎧 and playing guitar\n\t\t\t\t#####################\n\n";
+    std::cout << "\t\t\t\t#####################\n\t\t\t\tI like programming since childhood!\n";
+    std::cout << "\t\t\t\t* I'm based in Ukraine Odessa\n";
+    std::cout << "\t\t\t\t* You can contact me at lageroped7@gmail.com\n\t\t\t\t* I'm learning Django and Data bases\n";
+    std::cout << "\t\t\t\t* I'm love listening to music 🎧 and playing guitar\n\t\t\t\t* Support new programmer - https://send.monobank.ua/KVfdWvEhD\n\t\t\t\t#####################\n\n";
     return 0;
 }
 
