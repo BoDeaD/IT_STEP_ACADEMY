@@ -104,5 +104,5 @@ int main()
     //distance_converter(5);
     //interest(10,5);
     //temperature_converter();
-    replace(5,10);
+    //replace(5,10);
 }
