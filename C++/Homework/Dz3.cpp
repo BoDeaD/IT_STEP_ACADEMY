@@ -93,6 +93,74 @@ int speed_count()
     int speed = (S / (T / 60));
 
     cout << "Скорость - " << speed << " км/ч\n-\n";
+
+    return 0;
+}
+/*7. Пользователь вводит с клавиатуры время начала и время завершения телефонного разговора (часы, минуты и секунды).
+Посчитать стоимость разговора, если стоимость минуты составляет 15 копеек, с учётом посекундной тарификации.
+*/
+int phone_call_amount()
+{
+    double HH, MM, SS;
+
+    cout << "-\nДлительность розговора \n";
+    cout << "Часы - ";
+    cin >> HH;
+    cout << "Минуты - ";
+    cin >> MM;
+    cout << "Секунды - ";
+    cin >> SS;
+
+    if (SS == 0){
+         MM += (HH * 60);
+    }
+    else {
+         MM += (HH * 60) + 1;
+    }
+
+    cout << "-\nСтоимость разговора - " << (MM * 0.15) << " гривен\n";
+
+    return 0;
+}
+
+/*8. Пользователь вводит с клавиатуры время в секундах, прошедшее с начала рабочего дня.
+ Посчитать, сколько целых часов ему осталось сидеть на работе, если рабочий день составляет 8 часов.
+*/
+int func_8()
+{
+    int seconds;
+
+    cout << "-\nEnter seconds - ";
+    cin >> seconds;
+
+    seconds = (3600 * 8) - seconds;
+    int HH = seconds / 3600;
+    int MM = (seconds-(3600*HH)) / 60;
+    int SS = seconds % 60;
+
+    cout << "-\nTime - " << HH << " часов, " << MM << " минут, " << SS << " секунд\n";
+
+    return 0;
+
+}
+/*9 . Пользователь вводит с клавиатуры стоимость одного ноутбука, их количество и процент скидки.
+ Посчитать общую сумму заказа.*/
+
+int func_9()
+{
+    double cost,count,percent,sum;
+
+    cout << "-\nстоимость одного ноутбука - ";
+    cin >> cost;
+    cout << "их количество - ";
+    cin >> count;
+    cout << "процент скидки - ";
+    cin >> percent;
+
+    sum = (cost - ((cost * percent) / 100)) * count;
+
+    cout << "-\nОбщая сумму заказа - " << sum << "\n";
+
     return 0;
 }
 int main()
@@ -102,7 +170,10 @@ int main()
     //func_2();
     //func_3();
     //seconds_converter();
-    speed_count();
+    //speed_count();
+    //phone_call_amount();
+    //func_8();
+    //func_9();
 }
 void round_t(double a, double *b, double *c) {
         *c = modf(a,b);
