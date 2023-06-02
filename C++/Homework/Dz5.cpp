@@ -111,6 +111,41 @@ void func5()
     }
 
 }
+/*
+6. Ввести с клавиатуры число и проверить, принадлежит ли это число диапазону от N до М (включительно)
+*/
+void func6(int N, int M) 
+{
+    int number;
+    cout << "Enter number - ";
+    cin >> number;
+
+    if (N <= number && number <= M) {
+        cout << "это число принадлежит диапазону\n";
+    }
+    else {
+        cout << "это число не принадлежит диапазону\n";
+    }
+}
+
+/*
+7. Написать программу для проверки кратности числа Х числу Y (оба числа вводятся с клавиатуры).
+*/
+void func7()
+{
+    int num1, num2;
+    cout << "Enter X - ";
+    cin >> num1;
+    cout << "Enter Y - ";
+    cin >> num2;
+
+    if (num1 % num2 == 0){
+        cout << "кратно\n";
+    }
+    else {
+        cout << "не кратно\n";
+    }
+}
 int main()
 {
     //func1();
@@ -118,4 +153,6 @@ int main()
     //func3();
     //func4();
     //func5();
+    //func6(1,10);
+    //func7();
 }
