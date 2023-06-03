@@ -146,6 +146,125 @@ void func7()
         cout << "не кратно\n";
     }
 }
+/*
+8. Ввести число и определить кратно ли оно 3, 5, и 7 одновременно. (логическое И)
+*/
+void func8()
+{
+    int num1;
+    cout << "Enter number - ";
+    cin >> num1;
+
+    if (num1 % 3 == 0 && num1 % 5 == 0 && num1 % 7 == 0){
+        cout << "кратно\n";
+    }
+    else {
+        cout << "не кратно\n";
+    }
+}
+/*
+9. Показать модуль введённого числа. (abs)
+*/
+void func9()
+{
+    int num1;
+    cout << "Enter number - ";
+    cin >> num1;
+
+    cout << "модуль введённого числа - " << abs(num1) << "\n";
+}
+/*
+10. Вводится целое число (не более 4 разрядов!) . Определить количество цифр в нём.
+*/
+void func10()
+{
+    string num;
+    cout << "Enter number - ";
+    cin >> num;
+    int pointer = 0;
+    for (int i = 0; i < num.length(); i++){
+        if (isdigit(num[i])){
+            pointer++;
+        }
+    }
+    cout << "количество цифр в нём - " << pointer << '\n';
+}
+/*
+11. Ввести с клавиатуры пятизначное число и определить, является ли оно палиндромом
+ (т.е. одинаково читается в обоих направлениях - например, 12321 будет палиндромом,
+12345 - не палиндром).
+*/
+void func11() {
+    string num, num1;
+    cout << "Enter number: ";
+    cin >> num;
+    int numl = num.length();
+
+    for (int i = numl - 1; i >= 0; i--) {
+        num1 += num[i];
+    }
+    if (num == num1) {
+        cout << "Yes\n";
+    } else {
+        cout << "No\n";
+    }
+}
+/*
+12. Пользователь задаёт координаты верхнего левого, и нижнего правого угла прямоугольника,
+ а также координаты точки (X, Y) в декартовой системе координат. Принадлежит ли
+точка этом поямоуГольнику
+*/
+void func12()
+{
+    int rectangle_up_X;
+    int rectangle_up_Y;
+    int rectangle_down_X;
+    int rectangle_down_Y;
+    int X;
+    int Y;
+
+    cout << "-\nкоординаты верхнего левого угла(X) -  ";
+    cin >> rectangle_up_X;
+    cout << "-\nкоординаты верхнего левого угла(Y) -  ";
+    cin >> rectangle_up_Y;
+
+    cout << "-\nкоординаты нижненго правого угла(X) -  ";
+    cin >> rectangle_down_X;
+    cout << "-\nкоординаты нижненго правого  угла(Y) -  ";
+    cin >> rectangle_down_Y;
+
+    cout << "-\nкоординаты точки(X) -  ";
+    cin >> X;
+    cout << "-\nкоординаты точки(Y) -  ";
+    cin >> Y;
+
+    if (rectangle_up_X <= X && rectangle_down_X >= X && rectangle_up_Y <= Y && rectangle_down_Y >= Y){
+         cout << "Точка принадлежит этому прямоугольнику\n";
+    }
+    else {
+        cout << "Точка не принадлежит этому прямоугольнику\n";
+        }
+}
+// 13. Найти максимальное значение среди 4 переменных, используя тернарный оператор.
+void func13()
+{
+    /*
+    list<int> num; // инициализирую список 
+    for (int i = 0; i < 4; i++){ // в цикле записываю в список 4 числа 
+        int number;
+        cout << "Enter number - " << "\n";
+        cin >> number;
+        num.push_back(number);
+    }
+    
+    for (int i = 0; i < 4; i++){
+        for (int j = 0; j < 4; j++){
+            
+        }
+    }
+    */
+   // P.S Не пасибо)) я передумал 
+}
 int main()
 {
     //func1();
@@ -155,4 +274,10 @@ int main()
     //func5();
     //func6(1,10);
     //func7();
+    //func8();
+    //func9();
+    //func10();
+    //func11();
+    //func12();
+    //func13();
 }
