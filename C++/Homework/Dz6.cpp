@@ -116,5 +116,5 @@ int func10()
 int main()
 {
     //func1();
-    func10();
+    //func10();
 }
