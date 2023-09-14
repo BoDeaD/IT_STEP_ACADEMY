@@ -72,7 +72,8 @@ int main()
 {
     const int lenght = 5;
     int massive[lenght] = {1,4,7,3,7};
-    //func1(23,3,2007,3,4,1980);
+    func1(23,3,2007,3,4,1980);
+    func1(23,3,2007,24,3,2007);
     //func2(massive, lenght);
     //func3(massive,lenght);
 }
@@ -83,10 +84,10 @@ int leap_year(int year){
     for (int i = 0; i <= year; i++){ 
         switch (int(year % 4 == 0)){
             case true:
-                year1 = year1 + (366 * i);
+                year1 = year1 + (366 + i);
                 break;
             case false:
-                year1 = year1 + (365 * i);
+                year1 = year1 + (365 + i);
                 break;
             default:
                 break;
