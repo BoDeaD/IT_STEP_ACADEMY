@@ -14,7 +14,6 @@ template <typename T1, typename T2> T2 average(T1 massive, T2 lenght){
 /* 
 Задача 2. Написать перегруженные шаблоны функций для
 нахождения корней линейного (ax + b = 0) и квадратного (ax^2 + bx + c = 0) уравнений.
-
 */
 template <typename T> T quadratic_equation(T a, T b, T c)
 {
