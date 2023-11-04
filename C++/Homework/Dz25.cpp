@@ -90,6 +90,7 @@ int main()
     }
     */
     //   4
-    func4(massive1,length);
+    int *p_massive1 = massive1;
+    func4(p_massive1,length);
     return 0;
 }
