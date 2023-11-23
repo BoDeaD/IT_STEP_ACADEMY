@@ -7,6 +7,10 @@ struct ship {
         int y;
         int length;
 };
+void print_field(char field[10][10]);
+bool is_valid_position(int x, int y, int length);
+bool is_access_position(char field[10][10],int x,int y,int length);
+int fill_field(char (&field)[10][10]);
 
 void print_field(char field[10][10])
 {
@@ -101,5 +105,6 @@ int fill_field(char (&field)[10][10]){
 
     cout << "\tYour field:" << "\n";
     print_field(field);
+    
     return 0;
 }
