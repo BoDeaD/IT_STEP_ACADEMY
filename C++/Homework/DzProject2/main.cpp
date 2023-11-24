@@ -44,11 +44,6 @@ void func2(FILE* file, const string& targetWord) {
 int main() {
     FILE* file = fopen("text.txt", "r");
 
-    if (!file) {
-        cerr << "Не удалось открыть файл для чтения.\n";
-        return 1;
-    }
-
     func1(file);
     // Перематываем файл на начало после чтения, чтобы использовать его вновь
     rewind(file);
