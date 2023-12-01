@@ -2,6 +2,10 @@
     "files.associations": {
         "iostream": "cpp",
         "list": "cpp",
-        "string": "cpp"
+        "string": "cpp",
+        "__locale": "cpp",
+        "string_view": "cpp",
+        "__string": "cpp",
+        "locale": "cpp"
     }
 }
