@@ -2,6 +2,34 @@
 
 using namespace std;
 
+class Test
+{
+    int a;
+    int b;
+public:
+    void Set_a(int x)
+    {
+        a = x;
+    }
+    void Set_b(int x)
+    {
+        b = x;
+    }
+    int Get_a()
+    {
+        return a;
+    }
+    int Get_b()
+    {
+        return b;
+    }
+    void Output()
+    {
+        cout << a << "\n";
+        cout << b << "\n";
+    }
+};
+
 class Rectangle
 {
     int a;
