@@ -35,6 +35,11 @@ class Rectangle
     int a;
     int b;
 public:
+    Rectangle()
+    {
+        a = 5;
+        b = 5;
+    }
     int Perimetr()
     {
         return 2 * (a + b);
@@ -70,6 +75,10 @@ class Circle
 {
     int r;
 public:
+    Circle()
+    {
+        r = 3;
+    }
     int Perimetr()
     {
         return 2 * 3,14 * r;
@@ -96,8 +105,6 @@ public:
 int main()
 {
     Rectangle obj;
-    obj.Set_a(15);
-    obj.Set_b(10);
     obj.Output();
 
     return 0;
